@@ -1,0 +1,6 @@
+# Log File #
+*.log
+
+# Compiled Files #
+bin/
+out/
