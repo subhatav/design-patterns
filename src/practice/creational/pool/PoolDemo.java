@@ -31,7 +31,7 @@ public final class PoolDemo {
 
     objectPool.status(); // CURRENT status
 
-    objectPool.remit(personObj3); // REMIT
-    objectPool.status(); // CURRENT status
+    objectPool.remit(personObj3); // BACK
+    objectPool.status(); // FINALE status
   }
 }

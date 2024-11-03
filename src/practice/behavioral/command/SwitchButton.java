@@ -21,7 +21,7 @@ public final class SwitchButton {
   }
 
   public void printState() {
-    var isOn = state ? "ON" : "OFF"; // Determine current state of Switch
+    var isOn = state ? "ON" : "OFF"; // Determine CURRENT state of Switch
     log.info("State of <" + location + "> Switch => [" + isOn + "]");
   }
 }

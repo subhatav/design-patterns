@@ -17,13 +17,13 @@ public final class HasCoinState implements VendorState {
 
   @Override
   public void ejectCoin(@NonNull final VendorMachine machine) {
-    machine.setState(new NoCoinState()); // ALTER State afterwards
+    machine.setState(new NoCoinState()); // ALTER state afterwards
     log.info("PASSED in EJECTING Coin => [" + machine + "]");
   }
 
   @Override
   public void dispenseFood(@NonNull final VendorMachine machine) {
-    machine.setState(new NoCoinState()); // ALTER State AFTER Action
+    machine.setState(new NoCoinState()); // ALTER state after action
     log.info("PASSED in DISPENSING Food => [" + machine + "]");
   }
 }

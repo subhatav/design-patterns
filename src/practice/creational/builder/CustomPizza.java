@@ -23,7 +23,7 @@ public final class CustomPizza {
   private final PizzaElement.ToppingType topping;
 
   public void eatPizza() {
-    log.info("EATING Pizza => " + this);
+    log.info("EATING the Pizza => [" + this + "]");
   }
 
   @Setter
@@ -40,7 +40,7 @@ public final class CustomPizza {
     private PizzaElement.ToppingType topping;
 
     public CustomPizza cookPizza() {
-      log.info("COOKING Pizza => " + this); // In OVEN
+      log.info("COOKING the Pizza => [" + this + "]");
       return new CustomPizza(doughType, sauceType, topping);
     }
   }

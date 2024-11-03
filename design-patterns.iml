@@ -22,7 +22,7 @@
         <SOURCES>
           <root url="jar://$USER_HOME$/.ideaLibSources/lombok-1.18.34-sources.jar!/" />
         </SOURCES>
-      </library>ō
+      </library>
     </orderEntry>
   </component>
 </module>

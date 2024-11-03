@@ -17,13 +17,13 @@ public final class Weather implements Subject {
 
   @Override
   public void attach(@NonNull final Observer watcher) {
-    log.info("Attaching Observer => [" + watcher + "]");
+    log.info("ATTACHING Observer => [" + watcher + "]");
     observers.add(watcher); // Add OBSERVER to current LIST
   }
 
   @Override
   public void detach(@NonNull final Observer watcher) {
-    log.info("Detaching Observer => [" + watcher + "]");
+    log.info("DETACHING Observer => [" + watcher + "]");
     observers.remove(watcher); // Remove OBSERVER from LIST
   }
 
@@ -34,9 +34,9 @@ public final class Weather implements Subject {
   }
 
   public void advanceTime() {
-    log.info("Current Weather Type => [" + currentWeatherType + "]");
+    log.info("CURRENT Weather TYPE => [" + currentWeatherType + "]");
     currentWeatherType = getFreshWeatherType(WeatherType.values());
-    log.info("Changed Weather Type => [" + currentWeatherType + "]");
+    log.info("CHANGED Weather TYPE => [" + currentWeatherType + "]");
     notifyObservers(); // Update ALL Watchers of CHANGE in Weather
   }
 

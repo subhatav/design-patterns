@@ -12,7 +12,7 @@ public final class NoCoinState implements VendorState {
 
   @Override
   public void insertCoin(@NonNull final VendorMachine machine) {
-    machine.setState(new HasCoinState()); // ALTER State afterwards
+    machine.setState(new HasCoinState()); // ALTER state afterwards
     log.info("PASSED in INSERTING Coin => [" + machine + "]");
   }
 

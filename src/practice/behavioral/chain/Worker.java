@@ -1,11 +1,13 @@
 package practice.behavioral.chain;
 
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
 @Log
 @Setter
+@EqualsAndHashCode
 public abstract sealed class Worker permits General, Jailer, King, Officer {
 
   protected Worker next; // Worker who is NEXT in CHAIN of Responsibility
