@@ -15,12 +15,12 @@ public final class VendorMachine {
 
   public void insertMoney() {
     log.info("ATTEMPT to INSERT Money => [" + this + "]");
-    state.insertCoin(this); // Try to INSERT Money
+    state.insertCoin(this); // Attempt to INSERT Money
   }
 
   public void ejectMoney() {
     log.info("ATTEMPT to EJECT Money => [" + this + "]");
-    state.ejectCoin(this); // Try to EJECT Money
+    state.ejectCoin(this); // Attempt to EJECT Money
   }
 
   public void dispenseFood() {

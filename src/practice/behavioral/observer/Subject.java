@@ -8,5 +8,5 @@ public sealed interface Subject permits Weather {
 
   void detach(@NonNull final Observer watcher);
 
-  void notifyObservers();
+  void notifyObservers(); // UPDATE Observers
 }

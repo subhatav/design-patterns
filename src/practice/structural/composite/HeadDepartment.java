@@ -20,16 +20,16 @@ public final class HeadDepartment implements Department {
   @NonNull
   private final String name;
 
-  public void addDepartment(Department department) {
-    departments.add(department);
+  public void addDepartment(@NonNull final Department department) {
+    departments.add(department); // ADD any SINGLE element in list
   }
 
-  public void addDepartments(Department... departments) {
-    this.departments.addAll(List.of(departments));
+  public void addDepartments(@NonNull final Department... departments) {
+    this.departments.addAll(List.of(departments)); // ADD multiple items
   }
 
-  public void removeDepartment(Department department) {
-    departments.remove(department);
+  public void removeDepartment(@NonNull final Department department) {
+    departments.remove(department); // REMOVE any particular element
   }
 
   @Override

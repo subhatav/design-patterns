@@ -6,7 +6,7 @@ import lombok.ToString;
 @ToString
 public final class Captain extends ArmyUnit {
 
-  Captain(@NonNull final ArmyUnit... children) {
+  public Captain(@NonNull final ArmyUnit... children) {
     super(children);
   }
 

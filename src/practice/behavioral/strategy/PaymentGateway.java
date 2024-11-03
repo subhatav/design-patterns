@@ -16,7 +16,7 @@ public final class PaymentGateway {
   private PaymentStrategy strategy;
 
   public void checkout(@NonNull final int amount) {
-    log.info("SELECTED Strategy => " + strategy);
-    strategy.pay(amount); // EXECUTE specific Strategy
+    log.info("SELECTED Strategy => [" + strategy + "]");
+    strategy.pay(amount); // EXECUTE this SELECTED Strategy
   }
 }

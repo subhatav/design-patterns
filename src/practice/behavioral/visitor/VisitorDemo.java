@@ -10,7 +10,7 @@ public final class VisitorDemo {
     final var soldier = new Captain(
         new Sergeant(new Recruit(), new Recruit()),
         new Sergeant(new Recruit(), new Recruit())
-    ); // Create CAMP Hierarchy of Soldiers
+    ); // Create Army CAMP hierarchy of Soldiers
 
     soldier.accept(new RecruitFriend());
     soldier.accept(new SergeantFriend());
